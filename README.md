@@ -4,7 +4,7 @@ So lets start with the basics :
 
 ###Circular Reveal
 
-This is easy one and explained at [Android Developer Training Notes][1]. For using this animation simply 
+This is easy one and explained at [Android Developer Training Notes][1]. For using this animation simply use this : 
 
     // previously invisible view
     View myView = findViewById(R.id.my_view);
@@ -38,7 +38,8 @@ Make sure that visibility of view is not set to `gone`, if visiblity is set to `
   
     // create the animation (the final radius is zero)
     int finalRadius = 0;
-    Animator anim = ViewAnimationUtils.createCircularReveal(myView, cx, cy, initialRadius, finalRadius);
+    Animator anim = 
+        ViewAnimationUtils.createCircularReveal(myView, cx, cy, initialRadius, finalRadius);
   
     // make the view invisible when the animation is done
     anim.addListener(new AnimatorListenerAdapter() {
