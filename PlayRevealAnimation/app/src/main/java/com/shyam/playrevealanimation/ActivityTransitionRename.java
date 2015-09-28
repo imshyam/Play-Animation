@@ -1,8 +1,11 @@
 package com.shyam.playrevealanimation;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
@@ -11,19 +14,30 @@ import android.view.View;
 
 import com.shyam.playrevealanimation.Adapter.RecyclerViewAdapter;
 
-public class FinalActivity extends Activity {
+public class ActivityTransitionRename extends Activity {
 
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     CollapsingToolbarLayout collapsingToolbarLayout;
+    FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_final);
+        setContentView(R.layout.activity_transition_anim);
 
         collapsingToolbarLayout = ((CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar_layout));
+        fab = (FloatingActionButton) findViewById(R.id.fabButton);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), DetailsActivity.class);
+                Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(ActivityTransitionRename.this).toBundle();
+                startActivity(intent, bundle);
+            }
+        });
 
         collapsingToolbarLayout.setTitle(getTitle());
 

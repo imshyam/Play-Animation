@@ -8,10 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.shyam.playrevealanimation.MainActivity;
+import com.shyam.playrevealanimation.ViewAnimation;
 import com.shyam.playrevealanimation.R;
-
-import java.util.List;
 
 /**
  * Created by shyam on 9/9/15.
@@ -62,7 +60,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         holder.serial.setText(mDataset[position]);
 
-        holder.tabIcon.setImageBitmap(MainActivity.getBitmap());
+        holder.tabIcon.setImageBitmap(ViewAnimation.getBitmap());
 
     }
 

@@ -1,34 +1,60 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.shyam.playrevealanimation.MainActivity">
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="129dp" />
-    <RelativeLayout
-        android:visibility="invisible"
-        android:id="@+id/viewReveal"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="#0ff"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"></RelativeLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Boom"
-        android:id="@+id/boom"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
     <include
         layout="@layout/toolbar"
-        android:id="@+id/toolbar"/>
+        android:id="@+id/toolbar"
+        />
+
+    <LinearLayout
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="View Transition"
+            android:textAllCaps="false"
+            android:id="@+id/viewTransition" />
+
+        <Button
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Scene Transition"
+            android:textAllCaps="false"
+            android:id="@+id/sceneTransition"/>
+
+        <Button
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Activity Transition"
+            android:textAllCaps="false"
+            android:id="@+id/activityTransition" />
+
+        <Button
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Shared Activity Transition"
+            android:textAllCaps="false"
+            android:id="@+id/sharedActivityTransition"/>
+
+        <Button
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Circular Reveal"
+            android:id="@+id/circularReveal"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
 </RelativeLayout>

@@ -15,5 +15,11 @@
         <item>7</item>
         <item>8</item>
     </string-array>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_scene">SceneActivity</string>
+    <string name="title_activity_fade">FadeActivity</string>
+    <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate finibus tincidunt. Maecenas malesuada arcu risus, nec mollis felis auctor non. Sed sodales, sem a bibendum suscipit, libero ex facilisis nibh, a feugiat tortor dolor quis orci. Pellentesque in tincidunt nulla. Nunc mollis, elit vitae dignissim pretium, metus massa tempor nisl, tristique hendrerit quam massa sit amet sem.</string>
+    <string name="title_activity_view_transition">ViewTransition</string>
 
 </resources>

@@ -3,12 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.shyam.playrevealanimation.FinalActivity">
+    tools:context="com.shyam.playrevealanimation.ActivityTransitionRename">
     
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:fitsSystemWindows="true"
         android:background="#42adbb">
 
         <android.support.design.widget.CollapsingToolbarLayout
@@ -16,12 +15,10 @@
             app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
             app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
             android:layout_width="match_parent"
-            android:fitsSystemWindows="true"
             app:expandedTitleGravity="center"
             android:layout_height="match_parent"
             app:layout_scrollFlags="scroll|enterAlwaysCollapsed|enterAlways">
             <ImageView
-                android:fitsSystemWindows="true"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"

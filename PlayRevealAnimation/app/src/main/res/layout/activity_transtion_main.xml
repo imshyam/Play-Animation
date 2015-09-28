@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shyam.playrevealanimation.ActivityTransition.ActivityTransitionMain">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@id/toolbar"/>
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/loremIpsum"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fade : "/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/startFadeAnim"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Fade Anim"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/startFadeTransitionXml"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Fade XML"
+                />
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/startFadeTransitionJava"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Fade Java"
+            />
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explode : "/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/startExplodeTransitionXml"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Explode XML"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/startExplodeTransitionXml2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Explode XML"
+                />
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/startExplodeTransitionJava"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Explode Java"
+                />
+        </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slide : "/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/startSlideNoOverlap"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="No Overlap"
+                />
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/startSlideTransitionXml"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Overlap XML"
+                />
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/startSlideTransitionJava"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Slide Java"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

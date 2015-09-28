@@ -10,5 +10,7 @@
     <color name="mediumHeading">#808080</color>
     <color name="lightGrey">#b8b8b8</color>
     <color name="notify">#ff00d0c2</color>
+    <color name="blue">#34b0df</color>
+    <color name="lightBlue">#32cdfb</color>
 
 </resources>
