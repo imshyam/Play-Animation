@@ -40,7 +40,7 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name=".Scene.SceneActivity"
+            android:name=".Scene.SceneTransition"
             android:label="@string/title_activity_scene"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" >
@@ -56,6 +56,10 @@
         <activity
             android:name=".ViewTransition.ViewTransition"
             android:label="@string/title_activity_view_transition" >
+        </activity>
+        <activity
+            android:name=".CircularReveal.CircularReveal"
+            android:label="@string/title_activity_circular_reveal" >
         </activity>
     </application>
 

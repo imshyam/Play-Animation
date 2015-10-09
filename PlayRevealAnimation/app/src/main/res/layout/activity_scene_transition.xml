@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shyam.playrevealanimation.Scene.SceneTransition">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <FrameLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></FrameLayout>
+
+    <LinearLayout
+        android:layout_below="@id/rootView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <Button
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:id="@+id/sceneTransition1"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scene to 1"/>
+            <Button
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:id="@+id/sceneTransition2"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scene to 2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <Button
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:id="@+id/sceneTransition3"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scene to 3"/>
+            <Button
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:id="@+id/sceneTransition4"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scene to 4"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+            <Button
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:id="@+id/sceneTransition5"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scene to 1"/>
+            <Button
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:id="@+id/sceneTransition6"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scene to 2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

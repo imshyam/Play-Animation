@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:text="Scene Transition"
             android:textAllCaps="false"
-            android:id="@+id/sceneTransition"/>
+            android:id="@+id/sceneTransition1"/>
 
         <Button
             android:layout_margin="@dimen/activity_horizontal_margin"

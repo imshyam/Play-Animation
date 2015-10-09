@@ -3,14 +3,10 @@
     <slide
         android:duration="500"
         android:slideEdge="left">
-
-        <arcMotion android:minimumHorizontalAngle="15"
-            android:minimumVerticalAngle="0"
-            android:maximumAngle="90"/>
         <targets>
             <target android:excludeId="@android:id/statusBarBackground"/>
             <target android:excludeId="@android:id/navigationBarBackground"/>
         </targets>
     </slide>
-
+    <arcMotion/>
 </transitionSet>

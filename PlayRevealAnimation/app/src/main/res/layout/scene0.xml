@@ -7,37 +7,31 @@
         android:layout_below="@id/toolbar"
         android:id="@+id/view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="264dp">
         <View
             android:id="@+id/viewCircle1"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
             android:background="@drawable/circular_view"/>
-        <View
-            android:id="@+id/viewCircle2"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/circular_view1"/>
         <View
             android:id="@+id/viewCircle3"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_below="@id/viewCircle1"
-            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
             android:background="@drawable/circular_view2"/>
         <View
             android:id="@+id/viewCircle4"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_below="@id/viewCircle1"
-            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
             android:background="@drawable/circular_view3"/>
+        <View
+            android:id="@+id/viewCircle2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circular_view1"/>
     </RelativeLayout>
 
 </LinearLayout>

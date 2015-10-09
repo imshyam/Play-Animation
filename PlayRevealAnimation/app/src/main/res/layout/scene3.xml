@@ -9,25 +9,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <View
-            android:id="@+id/viewCircle4"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_alignParentLeft="true"
-            android:background="@drawable/circular_view3"/>
-        <View
-            android:id="@+id/viewCircle3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/circular_view2"/>
-        <View
             android:id="@+id/viewCircle2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_below="@id/viewCircle4"
             android:layout_alignParentLeft="true"
             android:background="@drawable/circular_view1"/>
         <View
@@ -35,9 +20,24 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="@dimen/activity_horizontal_margin"
-            android:layout_below="@id/viewCircle4"
             android:layout_alignParentRight="true"
             android:background="@drawable/circular_view"/>
+        <View
+            android:id="@+id/viewCircle4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/viewCircle1"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/circular_view3"/>
+        <View
+            android:id="@+id/viewCircle3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_below="@id/viewCircle1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circular_view2"/>
     </RelativeLayout>
 
 </LinearLayout>
