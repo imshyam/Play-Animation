@@ -2,8 +2,7 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <objectAnimator
         android:duration="@integer/duration_anim"
-        android:propertyName="pathData"
-        android:valueFrom="@string/svg_cross"
-        android:valueTo="@string/svg_search"
-        android:valueType="pathType" />
+        android:propertyName="rotation"
+        android:valueFrom="45"
+        android:valueTo="0" />
 </set>

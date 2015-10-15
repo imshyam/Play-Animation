@@ -3,6 +3,7 @@ package com.shyam.playrevealanimation;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.transition.TransitionInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,18 +11,25 @@ import android.view.View;
 import android.widget.Button;
 
 import com.shyam.playrevealanimation.ActivityTransition.ActivityTransitionMain;
-import com.shyam.playrevealanimation.CircularReveal.CircularReveal;
+import com.shyam.playrevealanimation.Reveal.RevealAnimation;
 import com.shyam.playrevealanimation.Scene.SceneTransition;
 import com.shyam.playrevealanimation.ViewTransition.ViewTransition;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button view, scene, activity, activityShared, circularReveal;
+    Button view, scene, activity, activityShared, reveal;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setTitle("Play Animations");
 
         getWindow().setExitTransition(TransitionInflater.from(this).inflateTransition(R.transition.explode));
 
@@ -29,13 +37,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         scene = (Button) findViewById(R.id.sceneTransition1);
         activity = (Button) findViewById(R.id.activityTransition);
         activityShared = (Button) findViewById(R.id.sharedActivityTransition);
-        circularReveal = (Button) findViewById(R.id.circularReveal);
+        reveal = (Button) findViewById(R.id.reveal);
 
         view.setOnClickListener(this);
         scene.setOnClickListener(this);
         activity.setOnClickListener(this);
         activityShared.setOnClickListener(this);
-        circularReveal.setOnClickListener(this);
+        reveal.setOnClickListener(this);
 
 
     }
@@ -83,8 +91,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, ActivityTransitionRename.class);
                 startActivity(intent);
                 break;
-            case R.id.circularReveal:
-                intent = new Intent(this, CircularReveal.class);
+            case R.id.reveal:
+                intent = new Intent(this, RevealAnimation.class);
                 startActivity(intent);
                 break;
         }

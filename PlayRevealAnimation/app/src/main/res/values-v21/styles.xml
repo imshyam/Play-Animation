@@ -11,4 +11,5 @@
         <item name="android:windowExitTransition">@transition/explode</item>
         <item name="android:windowEnterTransition">@transition/explode</item>
     </style>
+
 </resources>

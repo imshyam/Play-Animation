@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:viewportHeight="48"
+    android:viewportWidth="48"
+    android:width="30dp"
+    android:height="30dp">
+
+    <group
+        android:name="close">
+        <path
+            android:name="close_path"
+            android:strokeWidth="1"
+            android:fillColor="#ababab"
+            android:pathData="@string/svg_voiceSearch" />
+    </group>
+</vector>

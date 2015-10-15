@@ -30,6 +30,11 @@ public class ActivityTransitionMain extends AppCompatActivity implements View.On
         setContentView(R.layout.activity_transtion_main);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setTitle("Activity Transition");
+
         bFadeAnim = (Button) findViewById(R.id.startFadeAnim);
         bFadeAnim.setOnClickListener(this);
         bFadeTransitionXml= (Button) findViewById(R.id.startFadeTransitionXml);

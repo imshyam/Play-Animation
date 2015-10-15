@@ -36,6 +36,10 @@ public class DetailsActivityTransition extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
+
+        getSupportActionBar().setTitle("Details");
+
+        setSupportActionBar(toolbar);
     }
 
     private void setUpAnim() {

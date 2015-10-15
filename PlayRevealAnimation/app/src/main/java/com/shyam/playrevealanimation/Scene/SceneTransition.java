@@ -2,6 +2,7 @@ package com.shyam.playrevealanimation.Scene;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.transition.ChangeBounds;
 import android.transition.Scene;
 import android.transition.TransitionInflater;
@@ -23,11 +24,18 @@ public class SceneTransition extends AppCompatActivity implements View.OnClickLi
     Button bSceneTrans1, bSceneTrans2, bSceneTrans3, bSceneTrans4, bSceneTrans5, bSceneTrans6;
     ViewGroup sceneRoot;
     Scene scene0, scene1, scene2, scene3, scene4, prevScene, currScene, nextScene;
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scene_transition);
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setTitle("Scene Transition");
 
         sceneRoot = (ViewGroup) findViewById(R.id.rootView);
         bSceneTrans1 = (Button) findViewById(R.id.sceneTransition1);

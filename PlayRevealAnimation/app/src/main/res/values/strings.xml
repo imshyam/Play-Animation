@@ -5,8 +5,11 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_final">Reveal</string>
 
+    <string name="svg_add">M 38.0,26.0 H 26.0 v 12.0 h -4.0 V 26.0 H 10.0 v -4.0 h 12.0 l 0.0,0.0 C 22.0,22.0,22.0,22.0,22.0,22.0 c 0.0,0.0,0.0,0.0,0.0,0.0 S 22.0,22.0,22.0,22.0 s 0.0,0.0,0.0,0.0 c 0.0,0.0,0.0,0.0,0.0,0.0 l 0.0,0.0 V 10.0 h 4.0 v 12.0 h 12.0 v 4.0 l 0.0,0.0 L 38.0,26.0 L 38.0,26.0 L 38.0,26.0 m 0.0,0.0 c 0.0,0.0,0.0,0.0,0.0,0.0 s 0.0,0.0,0.0,0.0 L 38.0,26.0 L 38.0,26.0 L 38.0,26.0 L 38.0,26.0 L 38.0,26.0 L 38.0,26.0 L 38.0,26.0 L 38.0,26.0 L 38.0,26.0</string>
     <string name="svg_search">M 31.0,28.0 h -1.59 l -0.55,-0.55 C 30.82,25.18,32.0,22.23,32.0,19.0 c 0.0,-7.18,-5.82,-13.0,-13.0,-13.0 S 6.0,11.82,6.0,19.0 s 5.82,13.0,13.0,13.0 c 3.23,0.0,6.18,-1.18,8.45,-3.13 l 0.55,0.55 V 31.0 l 10.0,9.98 L 40.98,38.0 L 31.0,28.0 L 31.0,28.0 m -12.0,0.0 c -4.97,0.0,-9.0,-4.03,-9.0,-9.0 s 4.03,-9.0,9.0,-9.0 s 9.0,4.03,9.0,9.0 s -4.03,9.0,-9.0,9.0 L 19.0,28.0 L 19.0,28.0 L 19.0,28.0 L 19.0,28.0 L 19.0,28.0 L 19.0,28.0 L 19.0,28.0 L 19.0,28.0 L 19.0,28.0</string>
     <string name="svg_cross">M 38.0,12.83 h 0.0 l 0.0,0.0 C 38.0,12.83,38.0,12.83,38.0,12.83 c 0.0,0.0,0.0,0.0,0.0,0.0 S 38.0,12.83,38.0,12.83 s 0.0,0.0,0.0,0.0 c 0.0,0.0,0.0,0.0,0.0,0.0 l 0.0,0.0 V 12.83 l 0.0,0.0 L 35.17,10.0 L 24.0,21.17 L 12.83,10.0 m 0.0,0.0 c 0.0,0.0,0.0,0.0,0.0,0.0 s 0.0,0.0,0.0,0.0 s 0.0,0.0,0.0,0.0 s 0.0,0.0,0.0,0.0 L 10.0,12.83 L 21.17,24.0 L 10.0,35.17 L 12.83,38.0 L 24.0,26.83 L 35.17,38.0 L 38.0,35.17 L 26.83,24.0 L 38.0,12.83</string>
+    <string name="svg_backArrow">M427,234.625H167.296l119.702-119.702L256,85L85,256l171,171l29.922-29.924L167.296,277.375H427V234.625z</string>
+    <string name="svg_voiceSearch">M14 48h4v-4h-4v4zm10-22c3.31 0 5.98-2.69 5.98-6l.02-12c0-3.32-2.68-6-6-6-3.31 0-6 2.68-6 6v12c0 3.31 2.69 6 6 6zm-2 22h4v-4h-4v4zm8 0h4v-4h-4v4zm8-28h-3.4c0 6-5.07 10.2-10.6 10.2-5.52 0-10.6-4.2-10.6-10.2h-3.4c0 6.83 5.44 12.47 12 13.44v6.56h4v-6.56c6.56-.97 12-6.61 12-13.44z</string>
 
     <string-array name="serialNo">
         <item>1</item>
@@ -25,5 +28,7 @@
     <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate finibus tincidunt. Maecenas malesuada arcu risus, nec mollis felis auctor non. Sed sodales, sem a bibendum suscipit, libero ex facilisis nibh, a feugiat tortor dolor quis orci. Pellentesque in tincidunt nulla. Nunc mollis, elit vitae dignissim pretium, metus massa tempor nisl, tristique hendrerit quam massa sit amet sem.</string>
     <string name="title_activity_view_transition">ViewTransition</string>
     <string name="title_activity_circular_reveal">CircularReveal</string>
+    <string name="title_activity_shared_activity_transition_main">Shared Activity Transition
+    </string>
 
 </resources>

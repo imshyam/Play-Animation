@@ -39,6 +39,10 @@ public class ViewAnimation extends AppCompatActivity implements View.OnClickList
 
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setTitle("View Animation");
+
+        setSupportActionBar(toolbar);
+
         boom.setOnClickListener(this);
         reveal.setOnClickListener(this);
 

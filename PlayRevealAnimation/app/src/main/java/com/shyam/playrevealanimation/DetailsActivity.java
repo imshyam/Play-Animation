@@ -20,6 +20,10 @@ public class DetailsActivity extends AppCompatActivity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
+        setSupportActionBar(toolbar);
+
+        getSupportActionBar().setTitle("Details");
+
         Fade fade = new Fade();
         fade.setDuration(700);
         fade.excludeTarget(R.id.toolbar, true);

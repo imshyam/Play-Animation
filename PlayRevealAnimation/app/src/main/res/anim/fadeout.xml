@@ -4,5 +4,5 @@
     android:zAdjustment="top"
     android:fromAlpha="1.0"
     android:toAlpha="0.0"
-    android:duration="700"
+    android:duration="@integer/duration_anim"
     />
