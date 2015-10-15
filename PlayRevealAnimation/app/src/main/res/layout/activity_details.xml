@@ -19,6 +19,8 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/minions"
+                android:transitionName="sharedMinions"
                 android:elevation="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"

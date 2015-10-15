@@ -13,6 +13,7 @@ import android.widget.Button;
 import com.shyam.playrevealanimation.ActivityTransition.ActivityTransitionMain;
 import com.shyam.playrevealanimation.Reveal.RevealAnimation;
 import com.shyam.playrevealanimation.Scene.SceneTransition;
+import com.shyam.playrevealanimation.SharedActivityTransition.SharedActivityTransitionMain;
 import com.shyam.playrevealanimation.ViewTransition.ViewTransition;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -88,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             case R.id.sharedActivityTransition:
-                intent = new Intent(this, ActivityTransitionRename.class);
+                intent = new Intent(this, SharedActivityTransitionMain.class);
                 startActivity(intent);
                 break;
             case R.id.reveal:

@@ -64,7 +64,8 @@
         </activity>
         <activity
             android:name=".SharedActivityTransition.SharedActivityTransitionMain"
-            android:label="@string/title_activity_shared_activity_transition_main" >
+            android:label="@string/title_activity_shared_activity_transition_main"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 
